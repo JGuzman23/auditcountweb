@@ -40,7 +40,7 @@
         <a class="navbar-brand" href="index.html"><img src="images/Logo.jpg" style="height: 100px;" alt="AUDIT-CONT"></a>
         <div class=" order-sm-start order-lg-last">
 			<div class="d-flex">
-			  <a href="#" class=""
+			  <!-- <a href="#" class=""
 				><span style="font-size: 30px; margin-right: 10px;" class="fa fa-facebook"
 				  ><i class="sr-only">Facebook</i></span
 				></a
@@ -50,7 +50,7 @@
 				><span style="font-size: 30px;" class="fa fa-instagram"
 				  ><i class="sr-only">Instagram</i></span
 				></a
-			  >
+			  > -->
 			 
 			</div>
 		  </div>
@@ -577,6 +577,9 @@
                       <li>Lizardo Lasoce</li>
                       <li>CODOPSI</li>
                       <li>Yascaspim cakes</li>
+                      <li>Agua Banileja</li>
+                      <li>Grucofip</li>
+                      <li>Luis Abreu contratista</li>
                     </ol>
                   </div>
                 </div>
@@ -616,26 +619,12 @@
             </div>
           </div>
           <div class="col-md-6 py-md-5 py-4 aside-stretch-right pl-lg-5">
-            <h2 class="footer-heading">Mis Contactos</h2>
+           
             <div action="#" class="form-consultation">
+             
               <div class="form-group">
-                <Label>Email:</Label>
-                <input
-                  type="text"
-                  class="form-control"
-                  value="juanreneguzman23@gmail.com"
-                  disabled="true"
-                />
-              </div>
-              <div class="form-group">
-                <Label>Telefono</Label>
-                <input
-
-                  type="text"
-                  class="form-control"
-                  value="809-948-9498"
-                  disabled="true"
-                />
+                <Label>Mensaje</Label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
               </div>
              
               <div class="form-group">
@@ -643,7 +632,7 @@
                   
                   id="btnemail"
                   type="button"
-                  class="form-control px-3"
+                  class="btn btn-dark"
                   style="cursor: pointer;"
                 >
                   Enviame un correo
@@ -938,9 +927,9 @@
     </div>
     <script>
       var btn = document.getElementById("btnemail");
-
+      var mensaje = document.getElementById("mensaje")
       btn.onclick = () => {
-        window.open('mailto:juanreneguzman23@gmail.com?subject=subject&body=body');
+        window.open(`mailto:auditcont.info@gmail.com?subject=Necesito Asesoria&body=${mensaje}`);
       };
 
       
